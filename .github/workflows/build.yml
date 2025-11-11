@@ -39,4 +39,4 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           body: "Release"
-          release_name: ${DATE}
+          release_name: "PDF ${{ env.DATE }}"
