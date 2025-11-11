@@ -27,6 +27,8 @@
     )[#content]
 }
 
+#lorem(10)
+
 #section[limiti notevoli][
     #lorem(100)
 ]
