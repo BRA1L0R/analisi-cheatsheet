@@ -247,10 +247,34 @@
   ]
 ]
 
-
-#section()[funzioni iperboliche][
-  TODO
+#section(color: red.darken(40%))[funzioni iperboliche][
+  === Funzioni
+  #table(columns: (1fr, 1fr))[
+    $sinh x = (e^x - e^(-x))/2$ Dispari][
+    $cosh x = (e^x + e^(-x) )/2$ Pari ][
+    $tanh x = (sinh x) / (cosh x) = (e^x-e^(-x)) / (e^x+e^(-x))$][
+    $coth x = (cosh x) / (sinh x) = (e^x+e^(-x)) / (e^x-e^(-x))$
+  ]
+  
+  === Interpretazione geometrica
+  #set align(center)
+  #image("./assets/iperboliche.png", height: 65pt)
+  #set align(left)
+  
+  === Quadrati
+  #table(columns: (1fr, 1fr))[
+    $(sinh x)^2 = (e^(2x) + e^(-2x) - 2)/4$][
+    $(cosh x)^2 = (e^(2x) + e^(-2x) + 2)/4$][
+    $(cosh x)^2 - (sinh x)^2 = 1$
+  ]
+  
+  === Duplicazione
+  #table(columns: (1fr))[
+    $sinh 2x = 2 sinh x cosh x$ ][
+    $cosh 2x = cosh^2 x + sinh^2 x$
+  ]
 ]
+
 #section[formule trigonometriche][sigh vanno messe anche queste]
 
 #section[derivate / primitive][
@@ -468,4 +492,3 @@ Grafici di funzione (insieme alle loro derivate?) da inserire con piene notazion
 - sin, cos, tan, cot, sec, csc,
 - arcsin, arccos, arctan
 - sinh, cosh, tanh
-
