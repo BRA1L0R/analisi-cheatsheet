@@ -3,7 +3,7 @@
 
 #set page(columns: 5, margin: 5pt, flipped: true)
 #set columns(gutter: 0pt)
-#set text(size: 6pt, font: "Atkinson Hyperlegible Next")
+#set text(size: 6pt, font: ("Atkinson Hyperlegible Next", "Atkinson Hyperlegible"))
 
 // #show: note => classnote(note, title: "o-piccolo")
 #place(
