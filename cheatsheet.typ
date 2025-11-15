@@ -253,7 +253,198 @@
 ]
 #section[formule trigonometriche][sigh vanno messe anche queste]
 
-#section[derivate / primitive][TODO (basta una sola sezione per derivate e integrali)]
+#section[derivate / primitive][
+
+  #set text(5pt)
+  #table(columns: (60pt, 40pt, 60pt),
+  
+  rows: (15pt, 15pt, 15pt),
+  inset: 4pt,
+  align: (horizon, horizon, horizon),
+
+  
+  table.header(
+    align(center)[
+    #text(
+      fill: rgb("B71C1C"),
+      [DERIVATA]
+    )], 
+    align(center)[$f(x)$], 
+    align(center)[
+    #text(
+      fill: rgb("#1C77D1"),
+      [PRIMITIVA]
+    )]
+  ))[
+    #text(
+      fill: rgb("B71C1C"),
+      $ 0 $
+    )
+  ][
+    $ a $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ a x $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ a $
+    )
+  ][
+    $ a x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ a x^2 / 2 $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ a x^(a-1) $
+    )
+  ][
+    $ x^a $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ (x^(a+1))/(a+1) space #text(4pt)[con $ x != -1 $] $ 
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ e^x $
+    )
+  ][
+    $ e^x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ e^x $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+      $ 1/x $
+    )
+  ][
+    $ ln x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ x (ln x - 1) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ -1/x^2 $
+    )
+  ][
+    $ 1/x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ ln abs(x) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ cos x $
+    )
+  ][
+    $ sin x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ -cos x $
+    ) 
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ -sin x $
+    )
+  ][
+    $ cos x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ sin x $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ 1/(cos^2 x) = 1 + tan^2 x $
+    )
+  ][
+    $ tan x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ -ln abs(cos x) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ 1 / sqrt(1 - x^2) $
+    )
+  ][
+    $ arcsin x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ x arcsin x + sqrt(1 - x^2) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ -1/sqrt(1-x^2) $
+    )
+  ][
+    $ arccos x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ x arccos x - sqrt(1- x^2) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ 1/(1+x^2) $
+    )
+  ][
+    $ arctan x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ x arctan x - 1/2 ln(1+x^2) $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ cosh x $
+    )
+  ][
+    $ sinh x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ cosh x $
+    )
+  ][
+    #text(
+      fill: rgb("B71C1C"),
+    $ sinh x $
+  )
+  ][
+    $ cosh x $
+  ][
+    #text(
+      fill: rgb("#1C77D1"),
+    $ sinh x $
+    )
+  ]
+]
 
 #section[integrali][
   Da mettere:
