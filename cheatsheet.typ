@@ -186,7 +186,15 @@
 ]
 
 #section(color: aqua.darken(30%))[sviluppi di taylor][
+  TODO:
+  - proprietà degli o piccolo
+
+
   #table(columns: (auto, 1fr))[
+    $f(x)_(x=a)$
+  ][
+    $f(a) + (f'(a))/1!x + (f''(a))/2!x^2 + (f'''(a))/3!x^3 + o(x^3)$
+  ][
     $sin(x)$
   ][
     $x - x^3/6 + x^5/120 - x^7/5040 + o(x^7)$
@@ -253,9 +261,22 @@
 #section()[funzioni iperboliche][
   TODO
 ]
-#section[formule trigonometriche][sigh vanno messe anche queste]
+#section[formule trigonometriche][
+  - Funzioni trigonometriche, simmetrie, definizioni
+  - Formule trigonometriche tutte quelle possibili immaginabili
+    - Addizione
+    - Duplicazione
+    - Bisezione
+    - Prostaferesi
+    - Parametriche
+]
 
-#section[derivate / primitive][
+#section(color: rgb("#a47b1d"))[derivate / primitive][
+
+  TODO:
+  - Regole di derivazione?
+  - Retta tangente
+  - Punti di non derivabilità
 
   #let derivate = rgb("#78101c");
   #let integrali = rgb("#0a0885");
@@ -279,9 +300,9 @@
           fill: integrali,
           [*$F(x)$*],
         )],
-        [#text(
-          [],
-        )],
+      [#text(
+        [],
+      )],
       align(center)[
         #text(
           fill: derivate,
@@ -308,7 +329,7 @@
     )
   ][
     #text(
-      []
+      [],
     )
   ][
     #text(
@@ -336,7 +357,7 @@
     )
   ][
     #text(
-      []
+      [],
     )
   ][
     #text(
@@ -364,7 +385,7 @@
     )
   ][
     #text(
-      []
+      [],
     )
   ][
     #text(
@@ -379,8 +400,8 @@
       $ cosh x $,
     )
   ]
-  
-  
+
+
   //bottom table----------------------------------------------
   #table(
     columns: (2fr, 1fr, 2fr),
@@ -469,11 +490,22 @@
   - Tecniche di integrazione
   - integrali circolari? (il grande ritorno)
   - solidi per integrazione
+  - qualche trucco sulle aree?
   - criteri di convergenza intregrali "impropri"
+  - Teorema della media?
 ]
 
-#section[numeri complessi][Li dobbiamo ancora fare]
-#section[equazioni differenziali][Le dobbiamo ancora fare]
+#section[numeri complessi][
+  Li dobbiamo ancora fare
+  - Coniugato
+  - Valore assoluto
+  - Identità di eulero
+  - Identità trigonometriche e numeri complessi
+]
+#section[equazioni differenziali][
+  Le dobbiamo ancora fare
+  - Problemi di Cauchy vanno alla grande nell'esame
+]
 
 #pagebreak()
 
