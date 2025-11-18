@@ -1,0 +1,27 @@
+name: Build pull requests
+on:
+    pull_request:
+        types: [opened, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            cheatsheet.typ
+          options: "--font-path=./fonts/"
+      - name: Pull request artifacts
+        uses: gavv/pull-request-artifacts@v2
+        with:
+          commit: ${{ github.event.pull_request.head.sha }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: |
+              cheatsheet.pdf
