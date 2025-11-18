@@ -1,6 +1,9 @@
 #import "@preview/showybox:2.0.4"
 // #import "/typst/lib.typ": *
-#set text(size: 6pt, font: ("Atkinson Hyperlegible Next", "Atkinson Hyperlegible"))
+
+// Settings generali per ridurre spazio sprecato
+#set text(size: 5pt, font: ("Atkinson Hyperlegible Next", "Atkinson Hyperlegible"))
+#set table(inset: 3pt)
 
 #let rainbow(content) = {
   set text(fill: gradient.linear(..color.map.inferno.map(a => a.darken(30%))))
@@ -54,7 +57,7 @@
     === Serie armonica
     $ sum 1/n^lambda $
 
-    converge per $lambda > 1$
+    converge per $lambda > 1$ #h(1fr) #box(inset: -2pt)[#image(height: 10pt, "assets/very-important-cat.jpeg")]
   ][
     === Serie armonica 2
     $ sum 1/(n |log n|^lambda) "&" sum 1/(n log_lambda n) $
@@ -67,7 +70,7 @@
   ]
   === Criteri di convergenza $C(s_n) = s_n "converge"$
   #table(columns: (1fr, 1fr), inset: 0pt)[
-    #table[
+    #table(columns: 1fr)[
       === Criterio del confronto
       Date due serie $sum a_n "e" sum b_n$ tale che $L = lim_(n->oo) (a_n)/(b_n)$
       - $L in RR =>$ $C(a_n)$ #iff $C(b_n)$
@@ -286,8 +289,8 @@
   #set text(5pt)
   //top table -----------------------------------------------------------------
   #table(
-    columns: (0.3fr, 0.25fr, 0.3fr, 1pt, 0.3fr, 0.25fr, 0.5fr),
-    inset: 3pt,
+    columns: (0.3fr, 0.25fr, 0.3fr, 2pt, 0.3fr, 0.25fr, 0.5fr),
+    inset: 2pt,
     align: (horizon, horizon, horizon),
 
     table.header(
