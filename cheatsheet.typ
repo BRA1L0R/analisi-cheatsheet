@@ -259,12 +259,27 @@
   #let integrali = rgb("#0a0885");
 
   #set text(5pt)
+  //top table -----------------------------------------------------------------
   #table(
-    columns: (2fr, 1fr, 2fr),
-    inset: 4pt,
+    columns: (0.3fr, 0.25fr, 0.3fr, 1pt, 0.3fr, 0.25fr, 0.5fr),
+    inset: 3pt,
     align: (horizon, horizon, horizon),
 
     table.header(
+      align(center)[
+        #text(
+          fill: derivate,
+          [*$d/(d x) f(x)$*],
+        )],
+      align(center)[*$f(x)$*],
+      align(center)[
+        #text(
+          fill: integrali,
+          [*$F(x)$*],
+        )],
+        [#text(
+          [],
+        )],
       align(center)[
         #text(
           fill: derivate,
@@ -291,15 +306,7 @@
     )
   ][
     #text(
-      fill: derivate,
-      $ a $,
-    )
-  ][
-    $ a x $
-  ][
-    #text(
-      fill: integrali,
-      $ a x^2 / 2 $,
+      []
     )
   ][
     #text(
@@ -327,27 +334,7 @@
     )
   ][
     #text(
-      fill: derivate,
-      $ 1/x $,
-    )
-  ][
-    $ ln x $
-  ][
-    #text(
-      fill: integrali,
-      $ x (ln x - 1) $,
-    )
-  ][
-    #text(
-      fill: derivate,
-      $ -1/x^2 $,
-    )
-  ][
-    $ 1/x $
-  ][
-    #text(
-      fill: integrali,
-      $ ln abs(x) $,
+      []
     )
   ][
     #text(
@@ -372,6 +359,56 @@
     #text(
       fill: integrali,
       $ sin x $,
+    )
+  ][
+    #text(
+      []
+    )
+  ][
+    #text(
+      fill: derivate,
+      $ cosh x $,
+    )
+  ][
+    $ sinh x $
+  ][
+    #text(
+      fill: integrali,
+      $ cosh x $,
+    )
+  ]
+  
+  
+  //bottom table----------------------------------------------
+  #table(
+    columns: (2fr, 1fr, 2fr),
+    inset: 2pt,
+    align: (horizon, horizon, horizon),
+
+    table.header(
+      align(center)[
+        #text(
+          fill: derivate,
+          [*$d/(d x) f(x)$*],
+        )],
+      align(center)[*$f(x)$*],
+      align(center)[
+        #text(
+          fill: integrali,
+          [*$F(x)$*],
+        )],
+    ),
+  )[
+    #text(
+      fill: derivate,
+      $ -1/x^2 $,
+    )
+  ][
+    $ 1/x $
+  ][
+    #text(
+      fill: integrali,
+      $ ln abs(x) $,
     )
   ][
     #text(
@@ -420,30 +457,6 @@
     #text(
       fill: integrali,
       $ x arctan x - 1/2 ln(1+x^2) $,
-    )
-  ][
-    #text(
-      fill: derivate,
-      $ cosh x $,
-    )
-  ][
-    $ sinh x $
-  ][
-    #text(
-      fill: integrali,
-      $ cosh x $,
-    )
-  ][
-    #text(
-      fill: derivate,
-      $ sinh x $,
-    )
-  ][
-    $ cosh x $
-  ][
-    #text(
-      fill: integrali,
-      $ sinh x $,
     )
   ]
 ]
