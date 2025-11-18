@@ -111,6 +111,7 @@
         2. $alpha_n -> 0$
         3. $alpha_(n+1) <= alpha_n$
       ]
+      Allora converge
     ][
       === Teorema dei carabinieri
       $ a_n <= phi_n <= b_n $
@@ -142,7 +143,8 @@
   ]
 
   === Limiti
-  #table(columns: (1fr, 1fr, 3.5fr))[
+  #set text(size: 4.5pt);
+  #table(columns: (1fr, 1fr, 4fr))[
     $ x->c $
   ][
     $ L in RR $
