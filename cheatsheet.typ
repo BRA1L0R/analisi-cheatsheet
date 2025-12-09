@@ -523,6 +523,20 @@
       $ x arctan x - 1/2 ln(1+x^2) $,
     )
   ]
+  Algebretta delle derivate
+  #table( columns: (auto, 1fr) )[
+    $ [f(x) plus.minus g()]' = f'(x) plus.minus g'(x) $
+  ][
+    $ [k f(x)]' = k f'(x) $
+  ][
+    $ [f(x) dot g()]' = f'(x) dot g(x) + f(x) dot g'(x) $
+  ][
+    $ [f(g(x))]' = f'(g(x)) dot g'(x) $
+  ][
+    $ [(f(x))/(g(x))]' = -(f'(x) dot g(x) - f(x) dot g'(x))/(g^2(x)) $
+  ][
+    $ [1/(f(x))]' = -(f'(x))/(f^2(x)) $
+  ] 
 ]
 
 #section[integrali][
