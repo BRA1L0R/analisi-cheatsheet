@@ -568,6 +568,9 @@
 ]
 
 #section[integrali][
+    Media integrale pesata:
+    int_a^b f(t)g(t)dt = f'(c) int_a^b g(t) dt
+
   Da mettere:
   - Proprietà degli integrali
   - Tecniche di integrazione
@@ -598,4 +601,3 @@ Grafici di funzione (insieme alle loro derivate?) da inserire con piene notazion
 - sin, cos, tan, cot, sec, csc,
 - arcsin, arccos, arctan
 - sinh, cosh, tanh
-
