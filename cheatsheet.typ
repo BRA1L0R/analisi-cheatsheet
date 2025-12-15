@@ -684,6 +684,10 @@
 
 #pagebreak()
 
+#image("assets/grafici-1.png")
+#image("assets/grafici-2.png")
+#image("assets/grafici-3.png")
+
 Grafici di funzione (insieme alle loro derivate?) da inserire con piene notazioni:
 - e^x
 - log(x)
