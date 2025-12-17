@@ -590,9 +590,32 @@
 ]
 
 #section[integrali][
-    Media integrale pesata:
+    
 
-   $ integral_a^b f(t)g(t) d t = f'(c) integral_a^b g(t) d t$
+  === Algebretta delle derivate
+  #table( columns: (auto, 1fr) )[
+    $ integral [f(x) plus.minus g()] = integral f(x) plus.minus integral g(x) $
+  ][
+    $ integral [k f(x)] = k integral f(x) $
+  ][
+    $ integral_n^m f(x) = integral_n^k f(x) + integral_k^n f(x) bold(#text[con]) n < k < m $
+  ][
+    $ integral f'(x) e^(f(x)) = e^f(x) $
+  ][
+    $ integral 1/(a+b x^2) = 1/sqrt(a b) arctan(sqrt(a/b) x) $
+  ][
+    $ integral (f'(x))/f(x) = ln|f(x)| $
+  ]
+
+  Media integrale pesata:
+
+  $ integral_a^b f(t)g(t) d t = f'(c) integral_a^b g(t) d t$ 
+  $ -------------------------- $
+  $ #text[dati due polinomi] P(x) and Q(x) | Q(x) = product_(i=1)^n q_i(x) -> integral P(x)/Q(x) = integral sum_(i=1)^n p_i(x)/q_i(x)$ \
+  
+  $ #text[esempio:] integral 2/(x^2 - 1) = integral [A/(x+1) + B/(x-1)] -> (A(x-1)+B(x+1))/(x^2-1) = 2/(x^2 - 1)$ \ 
+  $ (A+B)x + (A-B) = 2 -> A+B=0 and A-B=2 -> underline(A=1 and B = -1)$
+  $ -------------------------- $
 
   Da mettere:
   - Proprietà degli integrali
