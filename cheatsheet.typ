@@ -620,15 +620,18 @@
   ]
 
   === Tecnice d'Integrazione
-  #table(columns: (auto, 1fr))[
-    ==== Per Parti
+  #table(columns: (1fr, 1fr))[
+    ==== Per Parti (integrale indefinito)
     $ integral F dot g" "d x = F dot G - integral f dot G" "d x $
+  ][
+    ==== Per Parti (integrale definito)
     $ integral_a^b F dot g" "d x = [F dot G]_a^b - integral_a^b f dot G" "d x $
   ][
-    ==== Sostituzione
+    ==== Sostituzione (Metodo 1)
     $ integral f(x) d x = integral f(g(t)) g'(t) d t $
     $ x = g(t) " e " d x = g'(t) d t $
-    #line(length: 100%)
+  ][
+    ==== Sostituzione (Metodo 2)
     $ integral f(g(x)) g'(x) d x = integral f(t) d t $
     $ g(x) = t " e " g'(x) d x = d t $
   ]
