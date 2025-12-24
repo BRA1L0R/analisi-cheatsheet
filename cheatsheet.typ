@@ -680,7 +680,7 @@
       ==== Seconda Specie
       L'integranda non è limitata \
       Se $f(x)$ non è definita in $a$
-      $ integral_a^b f(x) d x ==> lim_(t->a) integral_t^b f(x) d x $
+      $ integral_a^b f(x) d x ==> lim_(t->0) integral_(a+t)^b f(x) d x $
     ]
 
   ]
