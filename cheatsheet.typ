@@ -6,7 +6,7 @@
   "Atkinson Hyperlegible Next",
   "Atkinson Hyperlegible",
 ))
-#set table(inset: 3pt)
+#set table(inset: 3pt, stroke: .5pt)
 
 #let rainbow(content) = {
   set text(fill: gradient.linear(..color.map.inferno.map(a => a.darken(30%))))
@@ -260,7 +260,7 @@
     $x - x^3/3 + 2/15x^5 - 17/315x^7 + 62/2835x^9 + o(x^9)$
   ]
 
-  proprietà degli o piccolo
+  === Algebra degli o(x)
   #table(columns: (1fr, 1fr, 1fr))[
     $o(g) plus.minus o(g) = o(g)$
   ][
@@ -278,7 +278,7 @@
 
 
 #section()[funzioni iperboliche][
-  #table(columns: (auto, auto, 1fr))[
+  #table(columns: (1fr, 1fr, auto))[
     $sinh x = (e^x - e^(-x))/2$
   ][
     $ lim_(x->plus.minus oo) sinh x = plus.minus oo $
@@ -619,7 +619,7 @@
     $ integral_a^b f(x)g(x) d x = f(c) integral_a^b g(x) d x $
   ]
 
-  === Tecnice d'Integrazione
+  === Tecniche d'Integrazione
   #table(columns: 1fr, inset: 0pt)[
     #table(columns: (1fr, 1fr))[
       ==== Per Parti (integrale indefinito)
@@ -640,34 +640,36 @@
       $ integral f(g(x)) g'(x) d x = integral f(t) d t $
       $ g(x) = t " e " g'(x) d x = d t $
     ]
-  ][
-    #table(columns: 1fr)[
-      ==== Funzioni Razionali
-      $ integral (P(x))/(Q(x)) d x $
+  ]
+
+
+  ==== Funzioni Razionali $integral (P(x))/(Q(x)) d x$
+  #table(columns: (1fr, 1fr))[
 
       ===== Passo 1: Divisione
       Se $"grado" P(x) >= "grado" Q(x)$:
       $ (P(x))/(Q(x)) = A(x) + (R(x))/(Q(x)) $
       Dove $A(x)$ è il risultato e $R(x)$ è il resto della divisione
-
+  ][
       ===== Passo 2: Fattorizzazione
       Scomporre il polinomio al denominatore in prodotti di polinomi di primo grado
-
+  ][
       ===== Passo 3: Sistema Lineare
       Riscrivere la funzione razionale in somma di funzioni razionali più semplici \
       Per ogni $A/(x - a)^n$ \
       Scriviamo $A/(x - a) + A/(x - a)^2 + dots + C/(x - a)^n$ \
       Infine trovare i valori delle costanti al numeratore imponendo un sistema lineare
-
+  ][
       ===== Passo 4: Integrazione
       Integrare le funzioni razionali semplici, usando
       #align(center)[
         #table(columns: auto)[
-          $ integral (f'(x))/f(x) d x = ln|f(x)| $
+            $ integral (f'(x))/f(x) d x = ln|f(x)| $
         ]
       ]
-    ]
   ]
+
+
 
   Da mettere:
   - integrali circolari? (il grande ritorno)
@@ -675,18 +677,18 @@
   - qualche trucco sulle aree?
 
   === Integrali Impropri
-  #table(columns: 1fr, inset: 2pt)[
-    Un integrale è detto improprio quando uno o entrambi i seguenti casi sono veri:
-    #table(columns: (1fr, 1fr))[
-      ==== Prima Specie
-      L'intervallo di integrazione è illimitato
-      $ integral_a^oo f(x) d x ==> lim_(t->oo) integral_a^t f(x) d x $
-    ][
-      ==== Seconda Specie
-      L'integranda non è limitata \
-      Se $f(x)$ non è definita in $a$
-      $ integral_a^b f(x) d x ==> lim_(t->0) integral_(a+t)^b f(x) d x $
-    ]
+  // #table(columns: 1fr, inset: 2pt)[
+  //   Un integrale è detto improprio quando uno o entrambi i seguenti casi sono veri:
+  //   #table(columns: (1fr, 1fr))[
+  //     ==== Prima Specie
+  //     L'intervallo di integrazione è illimitato
+  //     $ integral_a^oo f(x) d x ==> lim_(t->oo) integral_a^t f(x) d x $
+  //   ][
+  //     ==== Seconda Specie
+  //     L'integranda non è limitata \
+  //     Se $f(x)$ non è definita in $a$
+  //     $ integral_a^b f(x) d x ==> lim_(t->0) integral_(a+t)^b f(x) d x $
+  //   ]
     #table(columns: 1fr)[
       ==== Caso particolare $integral 1/x^a d x$
       Sia $a>0$:
@@ -707,7 +709,7 @@
       ]
     ]
     TODO: criteri di confronto integrali impropri
-  ]
+  // ]
 ]
 
 #section[numeri complessi][
@@ -717,12 +719,9 @@
     - Se il polinomio è complesso allora ogni soluzione complessa avrà anche il suo coniugato
   ]
 
-  #table(columns: (1fr, auto, auto))[
-    $z in CC$\
-    $z = a + i b$\
-    con $a, b in RR$\
-    e $i^2=-1$
-  ][
+  Definiamo $z in CC$ come $z = a + i b$ con $a, b in RR$ e $i^2=-1$
+
+  #table(columns: (1fr, 1fr))[
     ==== Complesso coniugato
     $overline(z) = a - b i$
     ==== Modulo
@@ -732,6 +731,8 @@
     $z=(a,b) in RR times RR = RR^2$\
     $Im(z) ~ y$ sul piano cartesiano\
     $Re(z) ~ x$ sul piano cartesiano
+
+    #text(size: 3pt)[N.B: parte reale e parte immaginaria sono entrambi due numeri reali, dunque $Im(2i) = 2$]
   ]
   === Algebretta
   #table(columns: (1fr, 1fr))[
