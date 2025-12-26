@@ -71,7 +71,7 @@
     converge per $lambda > 1$
   ][
     === Serie telescopica
-    $ sum b_(n+1) - b_n = lim_(n -> oo) b_(n+1 - b_n) $
+    $ sum b_(n+1) - b_n = lim_(n -> oo) b_(n+1) - b_n $
     converge $lim_(n->oo) b_n = L$
   ]
   === Criteri di convergenza $C(s_n) = s_n "converge"$
