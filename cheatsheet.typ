@@ -603,16 +603,6 @@
   ]
 ]
 
-#section[formule trigonometriche][
-  - Funzioni trigonometriche, simmetrie, definizioni
-  - Formule trigonometriche tutte quelle possibili immaginabili
-    - Addizione
-    - Duplicazione
-    - Bisezione
-    - Prostaferesi
-    - Parametriche
-]
-
 #section[integrali][
   === Proprietà
   #table(columns: (auto, auto))[
@@ -869,6 +859,48 @@
   ]
 ]
 
+#section[formule trigonometriche][
+  $ sin^2 alpha + cos^2 alpha = 1 $
+  === Formule
+  ==== Addizione
+  $sin(alpha plus.minus beta) = sin alpha cos beta plus.minus cos alpha sin beta$\
+  $cos(alpha plus.minus beta) = cos alpha cos beta minus.plus sin alpha sin beta$\
+  $tan(alpha plus.minus beta) = (tan alpha plus.minus tan beta)/(1 minus.plus tan alpha tan beta)$\
+  $cot(alpha plus.minus beta) = (cot alpha cot beta minus.plus 1)/(cot beta plus.minus cot alpha)$\
+  $sin(alpha + beta)sin(alpha - beta) = sin^2 alpha - sin^2 beta = cos^2 alpha - cos^2 beta$\
+  $cos(alpha + beta)sin(alpha - beta) = cos^2 alpha - sin^2 beta = cos^2 beta - sin^2 alpha$\
+  ==== Duplicazione
+  $sin 2 alpha = 2 sin alpha cos alpha$\
+  $cos 2 alpha = cos^2 alpha - sin^2 alpha = 1 - 2 sin^2 alpha = 2 cos^2 alpha - 1$\
+  $tan 2 alpha = (2 tan alpha)/(1 - tan^2 alpha) = 2/(cot alpha - tan alpha)$\
+  $tan 2 alpha = (cot^2 alpha - 1)/(2 cot alpha) = (cot alpha - tan alpha)/2$\
+  ==== Bisezione
+  $sin(alpha/2) = plus.minus sqrt((1 - cos alpha)/2)$\
+  $cos(alpha/2) = plus.minus sqrt((1 + cos alpha)/2)$\
+  $tan(alpha/2) = plus.minus sqrt((1 - cos alpha)/(1 + cos alpha)) =
+  (sin alpha)/(1 + cos alpha) = (1 - cos alpha)/(sin alpha)$\
+  $cot(alpha/2) = plus.minus sqrt((1 + cos alpha)/(1 - cos alpha)) =
+  (sin alpha)/(1 - cos alpha) = (1 + cos alpha)/(sin alpha)$\
+  ==== Parametriche
+  $"Sia" t = tan(alpha / 2)$
+  #grid(columns: (1fr, 1fr))[
+    $sin alpha = (2 t)/(1 + t^2)$
+  ][
+    $cos alpha = (1 - t^2)/(1 + t^2)$
+  ][
+    $tan alpha = (2 t)/(1 - t^2)$
+  ][
+    $cot alpha = (1 - t^2)/(2 t)$
+  ]
+  ==== Prostaferesi
+  $sin alpha plus.minus sin beta = 2 sin (alpha plus.minus beta)/2 cos (alpha minus.plus beta)/2$\
+  $cos alpha plus.minus cos beta = plus.minus 2 cos (alpha + beta)/2 cos (alpha - beta)/2$\
+  ==== Werner
+  $sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2$\
+  $cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2$\
+  $sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2$\
+]
+
 #section(color: color.olive.darken(40%))[funzioni iperboliche][
   === Funzioni
   #grid(columns: (1fr, 1fr, 1fr))[
@@ -904,7 +936,9 @@
   === #text(fill: green.darken(40%))[arcsin $[-1;1] -> [-pi/2; pi/2]$], #text(fill: orange)[arccos $[-1;1] -> [0; pi]$], arctan $RR -> (-pi/2; pi/2)$
   #image("assets/arcsinarccosarctan.jpeg")
 
-  === #text(fill: green.darken(40%))[sec $RR \\ {pi/2 + k pi} -> (-∞;-1] ∪ [1;+∞)$] \ #text(
+  === #text(
+    fill: green.darken(40%),
+  )[sec $RR \\ {pi/2 + k pi} -> (-∞;-1] ∪ [1;+∞)$] \ #text(
     fill: purple.darken(40%),
   )[csc $RR \\ {k pi} -> (-∞;-1] ∪ [1;+∞)$]
   #image("assets/seccsc.jpeg")
