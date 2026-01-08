@@ -757,7 +757,7 @@
     $z/w = (a c + b d)/(c^2 + d^2) + i (b c - a d)/(c^2 + d^2)$
   ]
   === Trigonometria
-  #table(columns: (1fr, 1fr))[
+  #table(columns: (1fr, auto))[
     $z = rho(cos theta + i sin theta) = rho e^(i theta)$
   ][
     $w = r(cos phi + i sin phi) = r e^(i phi)$
@@ -929,30 +929,56 @@
     ]
   ]
   ==== Bisezione
-  $sin(alpha/2) = plus.minus sqrt((1 - cos alpha)/2)$\
-  $cos(alpha/2) = plus.minus sqrt((1 + cos alpha)/2)$\
-  $tan(alpha/2) = plus.minus sqrt((1 - cos alpha)/(1 + cos alpha)) =
-  (sin alpha)/(1 + cos alpha) = (1 - cos alpha)/(sin alpha)$\
-  $cot(alpha/2) = plus.minus sqrt((1 + cos alpha)/(1 - cos alpha)) =
-  (sin alpha)/(1 - cos alpha) = (1 + cos alpha)/(sin alpha)$\
-  ==== Parametriche
-  $"Sia" t = tan(alpha / 2)$
-  #grid(columns: (1fr, 1fr))[
-    $sin alpha = (2 t)/(1 + t^2)$
+  #table(columns: 1fr, inset: 0pt)[
+    #table(columns: (1fr, 1fr), align: center)[
+      #grid(columns: auto, inset: 0pt)[
+        $ sin(alpha/2) = plus.minus sqrt((1 - cos alpha)/2) $
+      ]
+    ][
+      #grid(columns: auto, inset: 0pt)[
+        $ cos(alpha/2) = plus.minus sqrt((1 + cos alpha)/2) $
+      ]
+    ]
   ][
-    $cos alpha = (1 - t^2)/(1 + t^2)$
+    #table(columns: 1fr, inset: 2pt)[
+      $
+        tan(alpha/2) = plus.minus sqrt((1 - cos alpha)/(1 + cos alpha)) =
+        (sin alpha)/(1 + cos alpha) = (1 - cos alpha)/(sin alpha)
+      $
+    ][
+      $
+        cot(alpha/2) = plus.minus sqrt((1 + cos alpha)/(1 - cos alpha)) =
+        (sin alpha)/(1 - cos alpha) = (1 + cos alpha)/(sin alpha)
+      $
+    ]
+  ]
+  ==== Parametriche $t = tan(alpha / 2)$
+  #table(columns: (1fr, 1fr, 1fr, 1fr))[
+    $ sin alpha = (2 t)/(1 + t^2) $
   ][
-    $tan alpha = (2 t)/(1 - t^2)$
+    $ cos alpha = (1 - t^2)/(1 + t^2) $
   ][
-    $cot alpha = (1 - t^2)/(2 t)$
+    $ tan alpha = (2 t)/(1 - t^2) $
+  ][
+    $ cot alpha = (1 - t^2)/(2 t) $
   ]
   ==== Prostaferesi
-  $sin alpha plus.minus sin beta = 2 sin (alpha plus.minus beta)/2 cos (alpha minus.plus beta)/2$\
-  $cos alpha plus.minus cos beta = plus.minus 2 cos (alpha + beta)/2 cos (alpha - beta)/2$\
+  #text[
+    #show math.equation: set text(size: 4.5pt)
+    #table(columns: (1fr, 1fr))[
+      $
+        sin alpha plus.minus sin beta = 2 sin (alpha plus.minus beta)/2 cos (alpha minus.plus beta)/2
+      $
+    ][
+      $
+        cos alpha plus.minus cos beta = plus.minus 2 cos (alpha + beta)/2 cos (alpha - beta)/2
+      $
+    ]
+  ]
   ==== Werner
-  $sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2$\
-  $cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2$\
-  $sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2$\
+  $ sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2 $
+  $ cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2 $
+  $ sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2 $
 ]
 
 #section(color: color.olive.darken(40%))[funzioni iperboliche][
