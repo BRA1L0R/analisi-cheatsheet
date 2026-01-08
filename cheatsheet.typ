@@ -952,15 +952,26 @@
       $
     ]
   ]
-  ==== Parametriche $t = tan(alpha / 2)$
-  #table(columns: (1fr, 1fr, 1fr, 1fr))[
-    $ sin alpha = (2 t)/(1 + t^2) $
+  #grid(columns: (auto, auto), column-gutter: 2pt)[
+    ==== Parametriche $t = tan(alpha / 2)$
+    #table(columns: (auto, auto))[
+      $ sin alpha = (2 t)/(1 + t^2) $
+    ][
+      $ cos alpha = (1 - t^2)/(1 + t^2) $
+    ][
+      $ tan alpha = (2 t)/(1 - t^2) $
+    ][
+      $ cot alpha = (1 - t^2)/(2 t) $
+    ]
   ][
-    $ cos alpha = (1 - t^2)/(1 + t^2) $
-  ][
-    $ tan alpha = (2 t)/(1 - t^2) $
-  ][
-    $ cot alpha = (1 - t^2)/(2 t) $
+    ==== Werner
+    #grid(columns: auto)[
+      $ sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2 $
+    ][
+      $ cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2 $
+    ][
+      $ sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2 $
+    ]
   ]
   ==== Prostaferesi
   #text[
@@ -975,10 +986,6 @@
       $
     ]
   ]
-  ==== Werner
-  $ sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2 $
-  $ cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2 $
-  $ sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2 $
 ]
 
 #section(color: color.olive.darken(40%))[funzioni iperboliche][
