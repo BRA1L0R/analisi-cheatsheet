@@ -951,9 +951,9 @@
       $
     ]
   ]
-  #grid(columns: (auto, auto), column-gutter: 2pt)[
+  #grid(columns: (auto, auto), rows: 40pt)[
     ==== Parametriche $t = tan(alpha / 2)$
-    #table(columns: (auto, auto))[
+    #table(columns: (auto, auto), rows: (1fr, 1fr), align: horizon)[
       $ sin alpha = (2 t)/(1 + t^2) $
     ][
       $ cos alpha = (1 - t^2)/(1 + t^2) $
@@ -964,7 +964,7 @@
     ]
   ][
     ==== Werner
-    #grid(columns: auto)[
+    #table(columns: auto, inset: 1pt, rows: (1fr, 1fr, 1fr))[
       $ sin alpha sin beta = (cos(alpha - beta) - cos(alpha + beta))/2 $
     ][
       $ cos alpha cos beta = (cos(alpha - beta) + cos(alpha + beta))/2 $
@@ -972,6 +972,7 @@
       $ sin alpha cos beta = (sin(alpha - beta) + sin(alpha + beta))/2 $
     ]
   ]
+  #v(5pt)
   ==== Prostaferesi
   #text[
     #show math.equation: set text(size: 4.5pt)
