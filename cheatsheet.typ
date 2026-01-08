@@ -831,6 +831,12 @@
     1. $f$ continua $[a, b]$, deriv. $(a, b)$
     $ exists c in (a, b) : f'(c) = (f(b) - f(a))/(b - a) $
   ][
+    === Teorema di Cauchy
+    1. $f,g$ cont. $[a,b]$, deriv. $(a,b)$
+    2. $forall x in (a,b) : g'(x) != 0$ 
+
+    $ exists c in (a,b) : (f(b) - f(a))/(g(b) - g(a)) = (f'(c))/(g'(c)) $
+  ][
     === Teorema di de l'Hôpital
     1. $f, g$ derivabili nell'intorno di a, $g'(x) = 0$
 
