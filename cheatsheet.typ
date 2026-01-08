@@ -7,7 +7,6 @@
   "Atkinson Hyperlegible",
 ))
 #set table(inset: 3pt, stroke: 0.7pt)
-#set grid(row-gutter: 10pt)
 #show math.equation: set text(size: 5pt)
 
 #let rainbow(content) = {
@@ -588,7 +587,7 @@
   ]
 
   #grid(columns: (1fr, 1.2fr))[
-    #grid(columns: 1fr)[
+    #grid(columns: 1fr, row-gutter: 10pt)[
       === Retta tangente
       $ y = f'(x_0)(x - x_0) + f(x_0) $
     ][
