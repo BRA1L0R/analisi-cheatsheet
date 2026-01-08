@@ -971,7 +971,7 @@
     $ cosh 2x = cosh^2 x + sinh^2 x $]
   $ (cosh x)^2 - (sinh x)^2 = 1 $
 
-  === Grafici delle funzioni
+  === Rappresentazione grafica
   #figure(image("./assets/iperboliche.png", height: 75pt))
 ]
 
