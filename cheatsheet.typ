@@ -15,7 +15,7 @@
 }
 
 #let footer = [
-  #pad(y: -4pt)[
+  #pad(y: -8pt)[
     #text(1.4em, weight: "bold")[
         Analisi 1 Cheatsheet
     ],
@@ -31,7 +31,7 @@
   ]
 ]
 
-#set page(columns: 5, margin: 5pt, flipped: true, footer: footer)
+#set page(columns: 5, margin: 0pt, flipped: true, footer: footer)
 #set columns(gutter: 0pt)
 
 // #place(
@@ -1047,7 +1047,7 @@
 
 #pagebreak()
 
-#set page(columns: 4)
+#set page(columns: 3)
 #set text(size: 6pt)
 #show math.equation: set text(size: 6pt)
 
@@ -1077,6 +1077,10 @@
   #image("assets/arcsinh.jpeg")
 ]
 
-#image("assets/grafici-1.png")
+#section[Funzioni base][
+    === #text(fill: red)[$x$], #text(fill: green.darken(20%))[$x!$], #text(fill: orange.darken(30%))[$e^x$], #text(fill: purple.darken(40%))[$ln x$]
+    #image("assets/funzioni-base.png")
+]
+
 #image("assets/grafici-2.png")
 #image("assets/grafici-3.png")
