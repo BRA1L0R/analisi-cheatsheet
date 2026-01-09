@@ -196,9 +196,9 @@
     ]
   ][
     #table(columns: (auto, 1fr))[
-      $s = sup A $][$ (forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
-    ][              
-      $i = inf A $][$ (forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
+      $s = sup A$][$(forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
+    ][
+      $i = inf A$][$(forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
     ]
   ]
 ]
@@ -759,23 +759,31 @@
     #nb[NB]: $Im(2i) = 2$, non $2i$
   ]
   === Algebretta
-  #table(columns: (1fr, 1fr))[
+  #table(columns: (1fr, 1fr), align: center)[
     $z = a + b i$ ][ $z= c + d i$
   ][ $z+w = (a+c) + i(b+d)$ ][ $z dot w = (a c - b d) + i(a d + b c)$
-  ][ $1/z = a/(a^2 + b^2) - (b i)/(a^2 + b^2)$ ][
-    $z/w = (a c + b d)/(c^2 + d^2) + i (b c - a d)/(c^2 + d^2)$
+  ][ $ 1/z = a/(a^2 + b^2) - (b i)/(a^2 + b^2) $ ][
+    $ z/w = (a c + b d)/(c^2 + d^2) + i (b c - a d)/(c^2 + d^2) $
   ]
   === Trigonometria
-  #table(columns: (1fr, auto))[
-    $z = rho(cos theta + i sin theta) = rho e^(i theta)$
+  #table(columns: 1fr, inset: 0pt)[
+    #table(columns: (1fr, 1fr))[
+      $z = rho(cos theta + i sin theta) = rho e^(i theta)$
+    ][
+      $w = r(cos phi + i sin phi) = r e^(i phi)$
+    ]
   ][
-    $w = r(cos phi + i sin phi) = r e^(i phi)$
+    #grid(columns: 1fr, inset: 3pt)[
+      $ z dot w & = rho dot r [cos(theta + phi) + i sin(theta + phi)] $
+    ]
   ][
-    $z dot w &= rho dot r [cos(theta + phi) + i sin(theta + phi)]$
+    #grid(columns: 1fr, inset: 3pt)[
+      $ z / w & = rho / r [cos(theta - phi) + i sin(theta - phi)] $
+    ]
   ][
-    $z / w &= rho / r [cos(theta - phi) + i sin(theta - phi)]$
-  ][
-    $z^n = rho^n e^(i theta n) = rho^n [cos(theta n) + i sin(theta n)]$
+    #grid(columns: 1fr, inset: 3pt)[
+      $ z^n = rho^n e^(i theta n) = rho^n [cos(theta n) + i sin(theta n)] $
+    ]
   ]
 
   === Radici del polinomio
