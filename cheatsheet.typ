@@ -648,7 +648,7 @@
 
   === Tecniche d'Integrazione
   #table(columns: 1fr, inset: 0pt)[
-    #table(columns: (1fr, 1fr))[
+    #table(columns: (auto, auto))[
       ==== Per Parti (integrale indefinito)
       $ integral F dot g" "d x = F dot G - integral f dot G" "d x $
     ][
