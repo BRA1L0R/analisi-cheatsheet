@@ -482,7 +482,6 @@
     )
   ]
 
-
   //bottom table----------------------------------------------
   #table(
     columns: (auto, auto, 1fr),
@@ -515,6 +514,12 @@
       $ ln abs(x) $,
     )
   ][
+        $ 1/x $
+    ][
+        $ ln x $
+    ][
+        $ x ln x - x $
+    ][
     #text(
       fill: derivate,
       $ 1/(cos^2 x) = 1 + tan^2 x $,
