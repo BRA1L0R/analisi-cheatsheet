@@ -137,8 +137,6 @@
 
 #section(color: purple.darken(50%))[definizioni][
   Da mettere:
-  - definizione massimo minimo ecc ecc
-  - definizione SUP INF
   - definizione funzione lipschizstiana o come cazzo si scrive
 
   === Funzioni $f:A -> B$
@@ -183,6 +181,25 @@
     $ L = plus.minus oo $
   ][
     $forall M > 0 exists R > 0 | |x| > R => plus.minus f(x) > M$
+  ]
+
+  === Max, Min, Sup, Inf
+  #grid(columns: 1fr, gutter: 0pt)[
+    #table(columns: (auto, 1fr, auto, 1fr))[
+      *$max$*
+    ][
+      $m in A : forall x in A, x <= m$
+    ][
+      *$min$*
+    ][
+      $m in A : forall x in A, x >= m$
+    ]
+  ][
+    #table(columns: (auto, 1fr))[
+      $s = sup A $][$ (forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
+    ][              
+      $i = inf A $][$ (forall x in a, x <= s) and (forall epsilon > 0, exists x in A : s - epsilon < x)$
+    ]
   ]
 ]
 
