@@ -724,7 +724,7 @@
   // ]
   #table(columns: 1fr)[
     === Integrale di Gauss
-    #figure(image("assets/gaussiana.png"), caption: [Grafico di $e^(-x^2)$])
+    #figure(image("assets/gaussiana2.png"), caption: [$y = e^(-x^2)$])
 
     #grid(columns: (1fr, 1fr))[
       $ integral_(-oo)^(+oo) e^(-x^2) d x = sqrt(pi) $
