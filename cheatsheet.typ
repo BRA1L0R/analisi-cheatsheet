@@ -1054,7 +1054,9 @@
 
 
 #section[Trigonometria][
-  === #text(fill: green.darken(40%))[sin $RR -> [-1; 1]$], #text(fill: orange)[cos $RR -> [-1; 1]$], tan $RR \\ {pi/2 + k pi} -> RR$
+    #show heading: set align(center);
+
+    === #text(fill: green.darken(40%))[sin $RR -> [-1; 1]$], #text(fill: orange)[cos $RR -> [-1; 1]$], tan $RR \\ {pi/2 + k pi} -> RR$
   #image("assets/sincostan.jpeg")
 
   === #text(fill: green.darken(40%))[arcsin $[-1;1] -> [-pi/2; pi/2]$], #text(fill: purple.darken(40%))[arccos $[-1;1] -> [0; pi]$], arctan $RR -> (-pi/2; pi/2)$
@@ -1062,22 +1064,24 @@
 
   === #text(
     fill: green.darken(40%),
-  )[sec $RR \\ {pi/2 + k pi} -> (-∞;-1] ∪ [1;+∞)$] \ #text(
+  )[$sec : RR \\ {pi/2 + k pi} -> (-∞;-1] ∪ [1;+∞)$] \ #text(
     fill: purple.darken(40%),
-  )[csc $RR \\ {k pi} -> (-∞;-1] ∪ [1;+∞)$]
-  #image("assets/seccsc.jpeg")
+  )[$csc : RR \\ {k pi} -> (-∞;-1] ∪ [1;+∞)$] \ $cot : RR \\ {k pi | k in ZZ} -> RR$
+  #image("assets/seccsccot.png")
 ]
 
 #section[Iperbolometria][
-  === #text(fill: green.darken(40%))[sinh $RR -> RR$], #text(fill: orange)[cosh $RR -> [1;+∞)$], tanh $RR -> (-1;1)$
-  #image("assets/sinhcoshtanh.jpeg")
+    #show heading: set align(center);
+    === #text(fill: green.darken(40%))[sinh $RR -> RR$], #text(fill: orange)[cosh $RR -> [1;+∞)$], tanh $RR -> (-1;1)$
+    #image("assets/sinhcoshtanh.jpeg")
 
 
-  === #text(fill: green.darken(40%))[arcsinh $RR -> RR$], #text(fill: orange)[arccosh $[1;+∞) -> [0;+∞)$], arctanh $(-1, 1) -> RR$
-  #image("assets/arcsinh.jpeg")
+    === #text(fill: green.darken(40%))[arcsinh $RR -> RR$], #text(fill: orange)[arccosh $[1;+∞) -> [0;+∞)$], arctanh $(-1, 1) -> RR$
+    #image("assets/arcsinh.jpeg")
 ]
 
 #section[Funzioni base][
+    #show heading: set align(center);
     === #text(fill: red)[$x$], #text(fill: green.darken(20%))[$x!$], #text(fill: orange.darken(30%))[$e^x$], #text(fill: purple.darken(40%))[$ln x$]
     #image("assets/funzioni-base.png")
 ]
