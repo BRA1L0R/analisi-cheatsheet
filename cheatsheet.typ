@@ -823,7 +823,7 @@
     $ y'(x) = y(x)f(x) + g(x) $
     Si può procedere in 2 modi:
     1. Risolvere la variabili separabili omogenea associata e poi cercare il fattore $overline(u)(x)$
-    2. $u(x) = e^(-F(x)) dot integral e^(F(x))g(x) d x$
+    2. $u(x) = e^(+F(x)) dot integral e^(-F(x))g(x) d x$
   ][
     === Secondo ordine lineari om.
     $ a u''(x) + b u'(x) + c u(x) = f(x) $
