@@ -841,7 +841,7 @@
         size: 4pt,
       )[$a overline(u'')(x) + b overline(u')(x) + c overline(u)(x) = f(x)$]
       - $f(x) = e^(alpha t) => a e^(alpha t)$
-      - $f(x) =$ polinomio $n$ $=>$ ''
+      - $f(x) =$ polinomio $n$ $=> a e^(alpha t)$
       - $f(x) = sin(x)"/"cos(x) => a sin(x) + b cos(x)$
       - $f(x) = "soluzione omogenea"$ \
         $=>$ se $f(x)$ è soluzione omogenea, allora moltiplicare per $x$ q.b.
