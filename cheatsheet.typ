@@ -136,9 +136,6 @@
 ]
 
 #section(color: purple.darken(50%))[definizioni][
-  Da mettere:
-  - definizione funzione lipschizstiana o come cazzo si scrive
-
   === Funzioni $f:A -> B$
 
   #table(columns: (1fr, 1fr))[
@@ -154,6 +151,9 @@
     #set align(center)
     #image("./assets/iniettiva.png", height: 30pt)
   ]
+  ==== Lipschizstiana
+  - $exists L > 0 : forall x,y in A, |f(x) - f(y)| <= L|x-y|$
+  - $f$ si dice lipschizstiana su $I$ se la sua derivata è limitata.\ Dunque: $exists L > 0 : |f'(x)| <= L$
 
   === Limiti
   #set text(size: 4.5pt);
