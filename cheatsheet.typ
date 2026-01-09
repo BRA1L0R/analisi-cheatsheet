@@ -1059,7 +1059,14 @@
   $ (cosh x)^2 - (sinh x)^2 = 1 $
 
   === Rappresentazione grafica
-  #figure(image("./assets/iperboliche.png", height: 75pt))
+  #figure(image("./assets/iperboliche.png", height: 75pt), caption: [Rappresentazione dell'iperbole])
+]
+
+#align(center)[
+    #figure(
+        image("assets/christmascat.png", width: 100pt),
+        caption: [Un gatto]
+    )
 ]
 
 #pagebreak()
