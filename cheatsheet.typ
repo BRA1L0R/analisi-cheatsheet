@@ -15,7 +15,10 @@
 }
 
 #let footer = [
-  #pad(y: -2pt)[
+  #pad(y: -4pt)[
+    #text(1.4em, weight: "bold")[
+        Analisi 1 Cheatsheet
+    ],
     #h(1fr)
     _Made by #rainbow[Pietro Tamilia] (BRA1L0R) and #rainbow[Matteo Grande] (MattWaX)_
   ]
@@ -31,14 +34,14 @@
 #set page(columns: 5, margin: 5pt, flipped: true, footer: footer)
 #set columns(gutter: 0pt)
 
-#place(
-  top + center,
-  float: true,
-  scope: "parent",
-  text(1.4em, weight: "bold")[
-    Analisi 1 Cheatsheet
-  ],
-)
+// #place(
+//   top + center,
+//   float: true,
+//   scope: "parent",
+//   text(1.4em, weight: "bold")[
+//     Analisi 1 Cheatsheet
+//   ],
+// )
 
 #let section(title, content, color: black, raw: false) = {
   set table(stroke: color)
