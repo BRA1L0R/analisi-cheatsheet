@@ -430,7 +430,7 @@
   ][
     #text(
       fill: derivate,
-      $ a dot log(a) $,
+      $ a^x dot log(a) $,
     )
   ][
     $ a^x $
