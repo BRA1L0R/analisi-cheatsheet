@@ -627,8 +627,8 @@
       $ y = f'(x_0)(x - x_0) + f(x_0) $
     ][
       === Derivata dell'inversa
-      - $(f^(-1))'(y) = 1/(f'(y))$
-      - $(f^(-1))'(y) = 1/(f'(f^(-1)(x)))$
+      - $(f^(-1))'(y) = 1/(f'(x))$
+      - $(f^(-1))'(y) = 1/(f'(f^(-1)(y)))$
     ]][
     === Punti di non derivabilità
     - *Punto angoloso* \ $lim_(x -> x_0^+) f'(x) != lim_(x -> x_0^-) f'(x)$
